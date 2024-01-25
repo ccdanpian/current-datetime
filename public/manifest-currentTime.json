@@ -1,0 +1,31 @@
+{
+  "$schema": "../node_modules/@lobehub/chat-plugin-sdk/schema.json",
+  "api": [
+    {
+      "url": "https://bug-free-trout-rjrvv49vg753p55x-3400.app.github.dev/api/currentTime",
+      "name": "getCurrentTime",
+      "description": "获取当前时间，格式为年-月-日 时:分:秒，并记住这个时间作为系统时间",
+      "parameters": {
+        "properties": {
+          "asktime": {
+            "description": "发起当前日期时间的请求",
+            "type": "string"
+          }
+        },
+        "required": ["asktime"],
+        "type": "object"
+      }
+    }
+  ],
+  "author": "cc",
+  "createdAt": "2024-01-18",
+  "homepage": "https://github.com/your-github-repo",
+  "identifier": "time-assistant",
+  "meta": {
+    "avatar": "⏰",
+    "tags": ["time"],
+    "title": "Time Assistant",
+    "description": "A plugin to provide current time information"
+  },
+  "version": "1"
+}
