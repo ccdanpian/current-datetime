@@ -2,7 +2,7 @@
   "$schema": "../node_modules/@lobehub/chat-plugin-sdk/schema.json",
   "api": [
     {
-      "url": "https://bug-free-trout-rjrvv49vg753p55x-3400.app.github.dev/api/currentTime",
+      "url": "https://current-datetime.vercel.app/api/currentTime",
       "name": "getCurrentTime",
       "description": "获取当前时间，格式为年-月-日 时:分:秒，并记住这个时间作为系统时间",
       "parameters": {
