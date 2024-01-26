@@ -24,11 +24,11 @@
   "author": "cc",
   "createdAt": "2024-01-18",
   "homepage": "https://github.com/your-github-repo",
-  "identifier": "time-assistant",
+  "identifier": "current-time-assistant",
   "meta": {
     "avatar": "⏰",
     "tags": ["time"],
-    "title": "Time Assistant",
+    "title": "Current Time Assistant",
     "description": "A plugin to provide current time information"
   },
   "version": "1"
