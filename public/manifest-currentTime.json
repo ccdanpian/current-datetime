@@ -10,9 +10,13 @@
           "asktime": {
             "description": "发起当前日期时间的请求",
             "type": "string"
+          },
+          "timezone": {
+            "description": "默认为'Asia/Shanghai', 如果用户指定城市或地区，则用相应的时区",
+            "type": "string"
           }
         },
-        "required": ["asktime"],
+        "required": ["asktime", "timezone"],
         "type": "object"
       }
     }

@@ -10,13 +10,16 @@ export default async (req: Request) => {
   // 确保只处理 POST 请求
   if (req.method !== 'POST') return createErrorResponse(PluginErrorType.MethodNotAllowed);
 
+  // const rawArgs = req.body;
+  const args = await req.json();
+
   // 获取当前的北京时间
-  const beijingTime = moment().tz('Asia/Shanghai').format('YYYY-MM-DDTHH:mm:ss.SSSZ');
+  const currentTime = moment().tz(args.timezone).format('YYYY-MM-DDTHH:mm:ss.SSSZ');
   // 获取当前是星期几
-  const dayOfWeek = moment().tz('Asia/Shanghai').format('dddd')
+  const dayOfWeek = moment().tz(args.timezone).format('dddd')
   // 构造响应数据
   const responseData = {
-    currentTime: beijingTime,
+    currentTime: currentTime,
     dayOfWeek: dayOfWeek,
   };
 
