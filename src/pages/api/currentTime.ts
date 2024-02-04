@@ -1,8 +1,10 @@
 import { PluginErrorType, createErrorResponse } from '@lobehub/chat-plugin-sdk';
 import moment from 'moment-timezone';
+
 export const config = {
   runtime: 'edge',
 };
+
 export default async (req: Request) => {
   // 确保只处理 POST 请求
   if (req.method !== 'POST') {
